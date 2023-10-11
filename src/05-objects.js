@@ -31,7 +31,7 @@ function createBook() {
  */
 function findBookByAuthor(books, author) {
     for (let i = 0; i < books.length; i++) {
-        if (books[i].author = author) {
+        if (books[i].author === author) {
             return books[i];
         }
     }
