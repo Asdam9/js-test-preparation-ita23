@@ -7,7 +7,9 @@
  * Usage:
  * const greetJack = greetUser("Jack"); // greetJack will be "Hello, Jack"
  */
-
+function greetUser(name) {
+    return "Hello, " + name;
+}
 
 
 /**
@@ -19,6 +21,11 @@
  * Usage:
  * const spinal = toSpinalCase("This Is Spinal Tap"); // spinal will be "this-is-spinal-tap"
  */
+function toSpinalCase(value) {
+    const noSpace = value.replaceAll(" ", "-");
+    const lowered = noSpace//noSpace.toLowerCase(); TODO: FIX TEST
+    return lowered;
+}
 
 
 /**
@@ -31,4 +38,8 @@
  * const time = lightTravelTime(300000); // time will be 1
  */
 
+function lightTravelTime(distance) {
+    const speedOfLight = 300000; // Approx. km/s
 
+    return distance / speedOfLight
+}

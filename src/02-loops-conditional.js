@@ -10,7 +10,7 @@
  */
 
 function getNextEven(n) {
-
+    return n + 2 - Math.abs((n + 2) % 2);
 }
 
 
@@ -27,7 +27,7 @@ function getNextEven(n) {
  */
 
 function isMultipleOf(n, m) {
-
+    return n % m === 0;
 }
 
 
@@ -43,5 +43,9 @@ function isMultipleOf(n, m) {
  */
 
 function reverseString(str) {
+    const split = str.split("");
+    const reverse = split.reverse();
+    const joinReversed = reverse.join("");
 
+    return joinReversed;
 }
